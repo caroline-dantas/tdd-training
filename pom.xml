@@ -23,8 +23,8 @@
                     <version>2.22.0</version>
                     <configuration>
                         <includes>
-                            <include>com.dantas.articleDistributor.ArticleDistributorTest</include>
-                            <include>com.dantas.wordcounter.WordCounterTest</include>
+                            <include>ArticleDistributorTest</include>
+                            <include>WordCounterTest</include>
                         </includes>
                         <failIfNoTests>
                                 true
