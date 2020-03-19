@@ -1,4 +1,4 @@
-package java.com.dantas.articleDistributor;
+package com.dantas.articleDistributor;
 
 import com.dantas.com.articleDistributor.article.Article;
 import com.dantas.com.articleDistributor.article.Type;
