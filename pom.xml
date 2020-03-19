@@ -26,6 +26,9 @@
                             <include>com.dantas.articleDistributor.ArticleDistributorTest</include>
                             <include>com.dantas.wordcounter.WordCounterTest</include>
                         </includes>
+                        <failIfNoTests>
+                                true
+                        </failIfNoTests>
                     </configuration>
                 </plugin>
             </plugins>
