@@ -1,7 +1,7 @@
-package com.dantas.com.articleDistributor.sender;
+package com.dantas.articleDistributor.sender;
 
-import com.dantas.com.articleDistributor.client.Channel;
-import com.dantas.com.articleDistributor.database.ArticleDataAccess;
+import com.dantas.articleDistributor.client.Channel;
+import com.dantas.articleDistributor.database.ArticleDataAccess;
 
 public class ArticleDistributor {
     private Channel sport;

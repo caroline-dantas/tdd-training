@@ -1,10 +1,10 @@
 package com.dantas.articleDistributor;
 
-import com.dantas.com.articleDistributor.article.Article;
-import com.dantas.com.articleDistributor.article.Type;
-import com.dantas.com.articleDistributor.client.Channel;
-import com.dantas.com.articleDistributor.database.ArticleDataAccess;
-import com.dantas.com.articleDistributor.sender.ArticleDistributor;
+import com.dantas.articleDistributor.article.Article;
+import com.dantas.articleDistributor.article.Type;
+import com.dantas.articleDistributor.client.Channel;
+import com.dantas.articleDistributor.database.ArticleDataAccess;
+import com.dantas.articleDistributor.sender.ArticleDistributor;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

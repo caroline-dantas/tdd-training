@@ -1,4 +1,4 @@
-package com.dantas.com.articleDistributor.article;
+package com.dantas.articleDistributor.article;
 
 public class Article {
     private String content;
