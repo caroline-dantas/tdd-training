@@ -28,3 +28,5 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
     - name: Build and Run Unit Tests
       run: mvn -B package --file pom.xml
+    - name: Coveralls GitHub Action
+      uses: coverallsapp/github-action@v1.0.1
