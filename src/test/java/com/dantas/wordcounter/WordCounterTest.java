@@ -1,7 +1,6 @@
-package wordcounter;
+package com.dantas.wordcounter;
 
 import org.junit.jupiter.api.Test;
-import wordcounter.WordCounter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -9,57 +8,57 @@ class WordCounterTest {
     private WordCounter counter = new WordCounter();
 
     @Test
-    public void emptyStringHasNoWords() {
+    public void emptyStringHasNoWordsTest() {
         counter.add("");
         assertEquals(0, counter.getUniqueWordCount());
     }
 
     @Test
-    public void oneWordSentenceHasOneWord() {
+    public void oneWordSentenceHasOneWordTest() {
         counter.add("Andressa");
         assertEquals(1, counter.getUniqueWordCount());
     }
 
     @Test
-    public void twoWordSentenceHasTwoWords() {
+    public void twoWordSentenceHasTwoWordsTest() {
         counter.add("Andressa");
         counter.add("Dantas");
         assertEquals(2, counter.getUniqueWordCount());
     }
 
     @Test
-    public void multiWordSentenceHasCorrectWordCount() {
+    public void multiWordSentenceHasCorrectWordCountTest() {
         counter.add("one two tree");
         assertEquals(3, counter.getUniqueWordCount());
     }
 
     @Test
-    public void spacedOutMultiWordSentenceHasCorrectWordCount() {
+    public void spacedOutMultiWordSentenceHasCorrectWordCountTest() {
         counter.add(" one   two  tree  ");
         assertEquals(3, counter.getUniqueWordCount());
     }
 
     @Test
-    public void severalMultiWordSentenceHasCorrectWordCount() {
+    public void severalMultiWordSentenceHasCorrectWordCountTest() {
         counter.add("one two tree");
         counter.add("four five six");
         assertEquals(6, counter.getUniqueWordCount());
     }
 
     @Test
-    public void duplicateWordSentenceHasCorrectWordCount() {
+    public void duplicateWordSentenceHasCorrectWordCountTest() {
         counter.add("one two two");
         assertEquals(2, counter.getUniqueWordCount());
     }
 
     @Test
-    public void mixedCaseDuplicateWordSentenceHasCorrectWordCount() {
+    public void mixedCaseDuplicateWordSentenceHasCorrectWordCountTest() {
         counter.add("one One ONE");
         assertEquals(1, counter.getUniqueWordCount());
     }
 
     @Test
-    public void punctuationDuplicateWordSentenceHasCorrectWordCount() {
+    public void punctuationDuplicateWordSentenceHasCorrectWordCountTest() {
         counter.add("one. ");
         counter.add("one, two");
         counter.add("one, two!");

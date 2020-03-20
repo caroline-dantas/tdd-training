@@ -1,7 +1,7 @@
-package mockito.sender;
+package com.dantas.articleDistributor.sender;
 
-import mockito.client.Channel;
-import mockito.database.ArticleDataAccess;
+import com.dantas.articleDistributor.client.Channel;
+import com.dantas.articleDistributor.database.ArticleDataAccess;
 
 public class ArticleDistributor {
     private Channel sport;

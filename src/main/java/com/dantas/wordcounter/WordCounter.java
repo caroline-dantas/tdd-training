@@ -1,4 +1,4 @@
-package wordcounter;
+package com.dantas.wordcounter;
 
 import java.util.HashSet;
 import java.util.Set;

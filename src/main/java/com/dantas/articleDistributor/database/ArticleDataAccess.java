@@ -1,6 +1,6 @@
-package mockito.database;
+package com.dantas.articleDistributor.database;
 
-import mockito.article.Article;
+import com.dantas.articleDistributor.article.Article;
 
 import java.util.List;
 

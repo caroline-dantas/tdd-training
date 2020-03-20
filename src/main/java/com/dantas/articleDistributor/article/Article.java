@@ -1,4 +1,4 @@
-package mockito.article;
+package com.dantas.articleDistributor.article;
 
 public class Article {
     private String content;

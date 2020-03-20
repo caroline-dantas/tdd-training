@@ -1,10 +1,10 @@
-package mockito;
+package com.dantas.articleDistributor;
 
-import mockito.article.Article;
-import mockito.article.Type;
-import mockito.client.Channel;
-import mockito.database.ArticleDataAccess;
-import mockito.sender.ArticleDistributor;
+import com.dantas.articleDistributor.article.Article;
+import com.dantas.articleDistributor.article.Type;
+import com.dantas.articleDistributor.client.Channel;
+import com.dantas.articleDistributor.database.ArticleDataAccess;
+import com.dantas.articleDistributor.sender.ArticleDistributor;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
