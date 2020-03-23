@@ -28,6 +28,12 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
     - name: Build and Run Unit Tests
       run: mvn -B package --file pom.xml
+
+    - name: fix code coverage paths
+      working-directory: ./coverage
+      run: |
+	sed -i 's/\/home\/runner\/work\/tdd-training\/tdd-training\//\/github\/workspace\//g' lcov.info
+
     - name: Coveralls GitHub Action
       uses: coverallsapp/github-action@v1.0.1
       with:
