@@ -14,6 +14,12 @@ class WordCounterTest {
     }
 
     @Test
+    public void whiteSpacedEmptyStringHasNoWordsTest() {
+        counter.add("   ");
+        assertEquals(0, counter.getUniqueWordCount());
+    }
+
+    @Test
     public void oneWordSentenceHasOneWordTest() {
         counter.add("Andressa");
         assertEquals(1, counter.getUniqueWordCount());
@@ -55,6 +61,12 @@ class WordCounterTest {
     public void mixedCaseDuplicateWordSentenceHasCorrectWordCountTest() {
         counter.add("one One ONE");
         assertEquals(1, counter.getUniqueWordCount());
+    }
+
+    @Test
+    public void punctuationWordSentenceHasCorrectWordCountTest() {
+        counter.add("one. two, three! four? five: six'");
+        assertEquals(6, counter.getUniqueWordCount());
     }
 
     @Test
