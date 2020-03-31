@@ -7,12 +7,12 @@ public class WordCounter {
     private Set<String> uniqueWords = new HashSet<>();
 
     public void add(String sentence) {
-        if (sentence.isEmpty()) {
+        if (sentence.trim().isEmpty()) {
             return;
         }
-        String [] words = sentence.trim().toLowerCase().split("[.,!? ]+");
+        String [] words = sentence.trim().toLowerCase().split("[.,!? :;']+");
         for (String s : words) {
-            uniqueWords.add(s);
+            uniqueWords.add(s.trim());
         }
     }
 
